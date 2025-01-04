@@ -93,9 +93,9 @@ MEASUREMENT_RANGE = 25
 
 
 # 노이즈
-MOTION_NOISE = 0.3
+MOTION_NOISE = 0.0001
 
-MEASUREMENT_NOISE = 0.6
+MEASUREMENT_NOISE = 0.3
 
 
 N_LANDMARKS = 4
@@ -449,7 +449,7 @@ try:
 
     writer = PillowWriter(fps=20)
 
-    anim.save('project_slam.gif', writer=writer)
+    anim.save('project_slam2.gif', writer=writer)
 
 
 except Exception as e:
